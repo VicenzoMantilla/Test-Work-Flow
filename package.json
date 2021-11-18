@@ -1,5 +1,5 @@
 {
-  "name": "basd_2021_mindset_backend",
+  "name": "testworkflow",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/germanradium/basd_2021_mindset_backend.git"
+    "url": "git+https://github.com/VicenzoMantilla/Test-Work-Flow.git"
   },
   "engines": {
     "node": "16.8.0"
@@ -19,11 +19,12 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/germanradium/basd_2021_mindset_backend/issues"
+    "url": "https://github.com/VicenzoMantilla/Test-Work-Flow/issues"
   },
-  "homepage": "https://github.com/germanradium/basd_2021_mindset_backend#readme",
+  "homepage": "https://github.com/VicenzoMantilla/Test-Work-Flow#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.12",
     "uuid": "^8.3.2"
