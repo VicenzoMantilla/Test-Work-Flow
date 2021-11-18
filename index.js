@@ -1,13 +1,12 @@
-//Init
+require('dotenv').config()
 const express = require('express');
 const router = express.Router();
 const app = express();
-const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 
 //Mongoose Library
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://Sabrina:basd1234@basd-rr.gdgvl.mongodb.net/BaSD-RR?retryWrites=true&w=majority',
+mongoose.connect(process.env.DATABASE_URL,
 (error)=>{
   if(error){
     console.log("error: ", error)
@@ -62,6 +61,6 @@ router.use("/profiles", profilesRoutes);
 //Psychologists
 router.use("/psychologists", psychologistsRoutes);
 
-app.listen(PORT, () => {
-    console.log(`MindSet server listening at http://localhost:${port}`);
-  });
+app.listen(process.env.PORT, () => {
+    console.log(`MindSet server listening at http://localhost:${process.env.PORT}`);
+});
